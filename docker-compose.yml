@@ -1,0 +1,8 @@
+version: "2"
+services: 
+    rabbitmq:
+        image: rabbitmq:3.6.6-management-alpine
+        # ports: 
+        # - 127.0.0.1:15672:15672
+        environment: 
+        - PS1=\h$$ # so we can see what instance we're in when exec a bash
